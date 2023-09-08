@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.logo_search_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.logo_search_container img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.search_form {
+    border: 2px solid rgb(195, 208, 195);
+    border-radius: 10px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: 20px;
+    width: 400px;
+}
+#search {
+    border: none;
+    padding: 5px 2px;
+}
+#search:focus {
+outline: none;
+}
+span.fa-search {
+color: gray;
+}
+.person {
+    display: flex;
+    gap: 5px;
+    color: green;
+    justify-content: center;
+    align-items: center;
+}
+span.fa-user-alt {
+    border: 1px solid green;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.person p {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 750px){
+    
+header {
+    padding: 20px;
+}
+.search_form {
+    width: fit-content;
+}
+}
+main {
+    padding: 60px 100px 20px 100px;
+}
+.back_link {
+    text-decoration: none;
+    color: green;
+    display: flex;
+    gap: 5px;
+    padding: 10px 0px;
+    align-items: center;
+}
+.back_link span {
+    font-weight: 600;
+    font-size: small;
+}
+.dash_title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(1, 44, 1);
+}
+.sublinks_container {
+    border-bottom: 2px solid rgb(195, 208, 195);
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    color: rgb(5, 55, 5);
+    margin-bottom: 30px;
+}
+.sub_link {
+    font-size: 1rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+    margin-bottom: -2px;
+}
+.active_sub_link {
+     border-bottom: 2px solid green;
+     
+}
+.transaction_totals_container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 2px solid rgb(214, 228, 214);
+    padding: 20px;
+    border-radius: 10px;
+}
+.total_transaction {
+    border-right: 2px solid rgb(214, 228, 214);
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.total_transaction p {
+    font-size: 0.6rem;
+    color: gray;
+    padding-top: 5px;
+}
+.total_transaction h4 {
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.total_transaction:last-child {
+    border-right:none;
+}
+.Transaction_details_container {
+    display: grid;
+    grid-template-columns: auto 200px;
+    gap: 50px;
+}
+.client_info_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.black_square {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.black_square p {
+    font-size: 0.8rem;
+}
+.black_square .upper {
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+.info_item {
+    
+}
+.info_item h5 {
+color: rgba(128, 128, 128, 0.896);
+padding: 10px 0px;
+font-size: 0.7rem;
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+}
+.company_adress p {
+    display: grid;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.point_contact {
+    font-size: 0.9rem;
+}
+.phone_fax {
+    font-size: 0.9rem;
+}
+.email {
+    font-size: 0.8rem;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(214, 228, 214);
+}
+.email h4 {
+    font-size: 0.6rem;
+}
+.inve_since h4 {
+    font-size: 0.7rem;
+}
+.awards {
+    display: flex;
+    gap: 10px;
+}
+span.fa-award {
+    font-size: 2rem;
+}
+.pinkish {
+    color: pink;
+}
+.yellowish {
+    color: gold;
+}
+.chart_container {
+    border: 2px solid rgb(214, 228, 214);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.chart_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.chart_t1 {
+    color: rgb(4, 77, 4);
+}
+.palmplay {
+    margin-top: 50px;
+    padding-top: 30px;
+}
+.palmplay h1 {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.palpay_grid {
+display: grid;
+grid-template-columns: repeat(3,200px);
+grid-template-rows: repeat(2,1fr);
+gap: 20px;
+max-width: 700px;
+margin: 40px auto;
+}
+.palm-img{
+    margin: auto;
+    width: 200px;
+    display: block;
+}
+.item {
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 30px;
+}
+.first {
+    grid-row: 1 / 3;
+    background: purple;
+    color: white;
+    font-size: 1.5rem;
+ 
+}
+.first h2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.first p {
+    text-align: center;
+   font-size: 0.8rem;
+}
+.item h2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.item p {
+    text-align: center;
+   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 750px){
+    
+    main {
+        padding: 60px 30px 20px 30px;
+    }
+    .total_transaction p {
+        font-size: 0.6rem;
+        padding: 0px 5px;
+
+    }
+    
+    .transaction_totals_container {
+        padding: 20px 5px;
+        border-radius: 10px;
+    }
+    .Transaction_details_container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+    }
+
+
+    }
+    footer {
+        padding: 30px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p {
+        color: gray;
+    }

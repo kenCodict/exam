@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo_search_container">
+            <img src="./assets/image/examlogo.PNG" alt="company logo">
+            <form action="" method="get" class="search_form">
+                <span class="fas fa-search"></span>
+                <input type="search" name="search" id="search" placeholder="Search Anything">
+            </form>
+        </div>
+        <div class="person">
+            <p>Hi Ryan</p>
+            <span class="fas fa-user-alt"></span>
+        </div>
+    </header>
+    <main>
+        <a href="#" class="back_link">
+            <span class="fas fa-arrow-left"></span>
+            Back to investments
+        </a>
+        <h3 class="dash_title">Waystar RoyCo</h3>
+        <div class="sublinks_container">
+            <p class="sub_link active_sub_link" id="overview" data-id="overview">Overview</p>
+            <p class="sub_link" id="document" data-id="document">Document</p>
+            <p class="sub_link" id="distribution" data-id="distribution">Distribution</p>
+        </div>
+        <div class="Transaction_details_container">
+            <div class="cash_flow_info">
+                <div class="transaction_totals_container">
+                    <div class="total_transaction">
+                        <h4>$120,000</h4>
+                        <p>Total Amount Invested</p>
+                    </div>
+                    <div class="total_transaction">
+                        <h4>$3,370.80</h4>
+                        <p>Total Distributions</p>
+                    </div>
+                    <div class="total_transaction">
+                        <h4>9%</h4>
+                        <p>Cash-on-cash return</p>
+
+                    </div>
+                    <div class="total_transaction">
+                        <h4>12/31/2023(Q4)</h4>
+                        <p>NEXT PAYOUT</p>
+                    </div>
+                </div>
+                <!-- Chart -->
+                <div class="chart_container">
+                    <div class="chart_title">
+                        <h2 class="chart_t1">
+                            Cashflow History
+                        </h2>
+                        <h2>9% APY</h2>
+                    </div>
+                   <div style="height: 200px;">
+                    <canvas id="myChart" style="width:100%;"></canvas>
+                   </div>
+                </div>
+            </div>
+            <div class="client_info_container">
+                <div class="black_square">
+                    <p>waystar|<span class="upper">royco</span></p>
+                </div>
+                <div class="company_adress info_item">
+                    <h5>Company Address</h5>
+                    <p>4236 Jovany Garden <span>Suite 576</span></p>
+                    <p>New york, NY, 80766-9397 <span>United State</span></p>
+                </div>
+                <div class="point_contact info_item">
+                    <h5>POINT OF CONTACT</h5>
+                    <h4>Marcia Roy</h4>
+                    <p>Investor Relations</p>
+                </div>
+                <div class="phone_fax info_item">
+                    <h5>PHONE/FAX</h5>
+                    <p>(751)5640196</p>
+                </div>
+                <div class="email info_item">
+                    <h5>EMAIL</h5>
+                    <h4>marcia.roy@waystarroyco.com</h4>
+                </div>
+              
+                
+                <div class="inve_since info_item">
+                    <div class="awards">
+                        <span class="fas fa-award pinkish"></span>
+                    <span class="fas fa-award yellowish"></span>
+                    </div>
+                    <h5>Investor Since</h5>
+                    <h4>Sep 10, 2021 (2 yrs)</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PALM PLAY -->
+        <div class="palmplay">
+            <h1>PalmPay is is a driving force of cashless payment adoption in Nigeria</h1>
+            <div class="palpay_grid">
+                <div class="first item">
+                    <h2>25+ <span>Million</span></h2>
+                    <p>Registered Users</p>
+                </div>
+                <div class="second item">
+                    <h2>500,000+</h2>
+                    <p>Mobile Money Agents</p>
+                </div>
+                <div class="third item">
+                    <h2>300,000+</h2>
+                    <p>Merchants</p>
+                </div>
+                <div class="fourth item">
+                    <h2>$5BN+</h2>
+                    <p>Monthly USD Transaction Value</p>
+                </div>
+                <div class="fifth item">
+                    <h2>75%</h2>
+                    <p>Customer Retension Rate</p>
+                </div>
+            </div>
+            <img src="./assets/image/PalmPay-Logo-300x300.jpg" alt="" class="palm-img">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Sharewillow, Inc 2023. All Rights Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
